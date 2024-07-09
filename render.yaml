@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: my-dotnet-app
+    env: dotnet
+    buildCommand: 
+      - cd src/Web
+      - dotnet build
+    startCommand: dotnet run --project src/Web
+    plan: free
